@@ -1,0 +1,23 @@
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .sign-out {
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+
+ 
