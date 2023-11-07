@@ -1,6 +1,16 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
 .nav-item {
     display: inline-block;
     margin-right: 10px;
+    font-size: 32px;
   }
   
   .nav-link {
@@ -19,5 +29,10 @@
     border-radius: 5px;
 
   }
+
+  .home-buttons {
+    margin-top: 45px;
+  }
+
 
  
