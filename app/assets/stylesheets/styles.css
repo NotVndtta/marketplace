@@ -1,6 +1,8 @@
 body {
   font-family: Poppins, sans-serif;
+  font-size: 30px;
 }
+
 
 h1 {
   font-size: 40px;
@@ -8,17 +10,20 @@ h1 {
 }
 
 .nav-item {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     margin-right: 10px;
     font-size: 32px;
+    width: 100%;
   }
   
-  .nav-link {
+  .sign-up {
     text-decoration: none;
     color: #fff;
     background-color: black;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 14px;
+    font-size: 25px;
   }
   
   .sign-out {
@@ -26,12 +31,15 @@ h1 {
     color: #fff;
     background-color: black;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 14px;
+    font-size: 25px;
 
   }
 
-  .home-buttons {
+  .home-buttons { 
     margin-top: 45px;
+    width: 100%;
+    text-align: right;
   }
 
 
