@@ -17,7 +17,7 @@ h1 {
     width: 100%;
   }
   
-  .sign-up {
+.sign-up {
     text-decoration: none;
     color: #fff;
     background-color: black;
@@ -26,7 +26,7 @@ h1 {
     font-size: 25px;
   }
   
-  .sign-out {
+.sign-out {
     text-decoration: none;
     color: #fff;
     background-color: black;
@@ -36,11 +36,13 @@ h1 {
 
   }
 
-  .home-buttons { 
+.home-buttons { 
     margin-top: 45px;
     width: 100%;
     text-align: right;
   }
 
-
+.edit {
+  color: black;
+}
  
