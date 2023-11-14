@@ -4,53 +4,53 @@ h2 {
     font-weight: 900;
   }
   
-  hr {
+hr {
     border-top: 3px solid black;
-  }
+}
   
-  .registration {
+.registration {
    font-family: Poppins, sans-serif;
    font-size: 32px;
    font-weight: 400;
-  }
+ }
   
-  .field {
+.field {
     margin-top: 25px;
-  }
+}
   
-  label {
+label {
     display: block;
     font-weight: bold;
     
+}
+  
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 0.5em;
+  width: 800px;
+  height: 50px;
   }
   
-  input[type="email"],
-  input[type="text"],
-  input[type="password"] {
-    border: 1px solid black;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 32px;
-    font-weight: 300;
-    padding: 0.5em;
-    width: 800px;
-    height: 50px;
-  }
-  
-  .actions {
+.actions {
     margin-top: 25px;
     margin-bottom: 25px;
     width: 80px;
-  }
+}
 
-  .login-actions {
+.login-actions {
     display: flex;
     margin-bottom: 25px;
     margin-top: 25px;
     
-  }
+}
   
-  input[type="submit"] {
+input[type="submit"] {
     padding: 13px 22px 17px;
     background-color: black;
     border-radius: 7px;
@@ -60,21 +60,21 @@ h2 {
     letter-spacing: -0.03em;
     color: white;
     text-align: center;
-  }
+}
   
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     opacity: 0.95;
     background-color: black;
-  }
+}
 
   
-  .field input[type="checkbox"] {
+.field input[type="checkbox"] {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  .login a {
+.login a {
     font-family: Poppins,sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -85,7 +85,7 @@ h2 {
     text-decoration: none;
   }
  
-  .signup a {
+.signup a {
       font-family: Poppins,sans-serif;
 
       font-weight: 500;
@@ -98,8 +98,7 @@ h2 {
       text-decoration: none;
       color: black;
    }
-
-  .forgot-password  a {
+.forgot-password  a {
     font-family: Poppins,sans-serif;
     
     font-weight: 500;
@@ -111,14 +110,30 @@ h2 {
     text-decoration: none;
     }
 
-    .instruction-actions {
+.instruction-actions {
       margin-top: 45px;
       margin-bottom: 25px;
     }
 
-    .e-field {
+.e-field {
       margin-top: 25px;
       font-family: Poppins, sans-serif;
       font-size: 32px;
       font-weight: 400;
     }
+
+.home {
+ text-decoration: none;
+ color: black;
+ text-align: right;
+ margin-right: 30px;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 900;
+  align-items: center;
+  
+}

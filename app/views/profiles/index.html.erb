@@ -1,6 +1,6 @@
 <body>
 <div class="nav-item">
-<h1> MARKETPLACE </h1>
+<h1>PROFILE</h1>
 <div class="home-buttons">
 <%= link_to "Sign up", new_user_registration_path, class:"sign-up" %>
 <% if current_user %>
@@ -17,4 +17,8 @@
     <p> Updated: <%= current_user.updated_at%> </p>
     <% end %>
     <%= link_to "Edit Account", edit_user_registration_path, class:"edit"%>
+    
+    <%= link_to "Create Product", new_product_path %>
+    <% @product = Product.find(1) %>
+    <%= link_to "Product", product_path(@product) %>
 </body>

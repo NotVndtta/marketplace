@@ -1,4 +1,7 @@
+<div class="nav-title"> 
 <h2>SIGN UP</h2>
+<%= link_to "<-", :back, class: "home" %>
+</div>
 <hr/>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>

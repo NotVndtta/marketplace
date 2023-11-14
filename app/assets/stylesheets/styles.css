@@ -8,7 +8,6 @@ h1 {
   font-size: 40px;
   font-weight: 900;
 }
-
 .nav-item {
     display: flex;
     justify-content: space-between;
@@ -18,26 +17,31 @@ h1 {
   }
   
 .sign-up {
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-    padding: 10px;
-    border-radius: 14px;
-    font-size: 25px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-right: 10px;
+  font-size: 24px;
   }
   
 .sign-out {
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-    padding: 10px;
-    border-radius: 14px;
-    font-size: 25px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-right: 10px;
+  font-size: 24px;
 
+  }
+  .sign-up:hover, .sign-out:hover{
+    opacity: 0.7;
   }
 
 .home-buttons { 
-    margin-top: 45px;
+    margin-top: 40px;
     width: 100%;
     text-align: right;
   }

@@ -6,6 +6,8 @@ class User < ApplicationRecord
               
   enum role: [:user, :seller, :admin]
   after_initialize :set_default_role, :if => :new_record?
+  validates :first_name, length: { maximum: 20 }
+  validates :last_name, length: { maximum: 20 }
   def set_default_role
     self.role ||= :user
   end
