@@ -1,16 +1,37 @@
-<h1>Products</h1>
+<div class="product_header">
+<h1 >PRODUCTS</h1>
+<%= image_tag "arrows/home.png", class: "home_img" %>
+</div>
 <hr/>
+    <div class = "product">
+            <%= image_tag @product.avatar.url, class:"product_img"%>
 
-    <h2>Product Name</h2>
-    <h2><%= @product.name %></h2>
-    <h2>Description</h2>
-    <p><%= @product.description %></p>
-    <h2>Price</h2>
-    <h2><%= @product.price %></h2>
-    <h2>Rating</h2>
-    <h2><%= @product.rating %></h2>
-     <%= link_to "Edit Product", edit_product_path %>
-    <h2>Photo</h2>
-     <%= image_tag @product.avatar.url %>
+        <div class= "product_text">
+            <div class = "product_name">
+                <h2>NAME</h2>
+                <p><%= @product.name %></p>
+                <hr/>
+            </div>
+            <div class="product_description">
+                <h2>DESCRIPTION</h2>
+                <p><%= @product.description %></p>
+                <hr/>
+            </div>
+            <div class="product_price">
+                <h2>PRICE</h2>
+                <p><%= @product.price %></p>
+                <hr/>
+            </div>
+            <div class="product_rating">
+                <h2>RATING</h2>
+                <p><%= @product.rating %></p>
+                <hr/>
+            </div>
+        </div>
+    </div>
+     <%= link_to "Edit Product", edit_product_path, class: "product_edit" %>
+
+    <%= link_to "Back", product_path(@product) %>
+    <% end %>
     
   

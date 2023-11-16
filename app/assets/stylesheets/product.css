@@ -1,0 +1,37 @@
+.product_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 45px;
+}
+
+
+
+.product_img {
+    width: 500px;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.product_text {
+    width: 80vh;
+}
+
+.product_edit {
+    color: black;
+    padding-left: 30px;
+}
+
+.home_img {
+    align-items: right;
+    width: 45px;
+    height: 25px;
+}
