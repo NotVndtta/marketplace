@@ -50,3 +50,41 @@ h1 {
   color: black;
 }
  
+.profile_content {
+  font-size: 32px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: left;
+}
+
+.profile_content p {
+  margin: 10px 0;
+}
+
+.profile_content p span {
+  font-weight: bold;
+}
+
+.profile_content a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.profile_content a.edit {
+  background-color: black;
+}
+
+.profile-title{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
