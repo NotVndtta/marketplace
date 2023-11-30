@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :products
   get 'products/index'
   get 'products/show'
