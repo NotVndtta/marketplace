@@ -28,3 +28,4 @@
 <% end %>
 
 <%= link_to 'Back', products_path, style: "back_btn" %>
+<div><%= button_to "Delete product", product_path(@product), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class:"cancel-account"%></div>
