@@ -10,9 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_24_213012) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_14_220003) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "carts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -24,10 +29,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_24_213012) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "orderables", force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "cart_id", null: false
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_orderables_on_cart_id"
+    t.index ["product_id"], name: "index_orderables_on_product_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.decimal "price"
+    t.integer "price"
     t.integer "rating"
     t.string "avatar"
     t.datetime "created_at", null: false
@@ -54,5 +69,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_24_213012) do
 
   add_foreign_key "comments", "products"
   add_foreign_key "comments", "users"
+  add_foreign_key "orderables", "carts"
+  add_foreign_key "orderables", "products"
   add_foreign_key "products", "users"
 end
