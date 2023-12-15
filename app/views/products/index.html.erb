@@ -19,6 +19,8 @@
 <%# <%= button_to 'Купить', buy_path(product), method: :post, params: product.id%>
 <% end %>
 <br/>
+<% if current_user.role=="seller"  %>
 <%= link_to "Create Product", new_product_path, class: "product_create-btn" %>
+<% end %>
 
 
