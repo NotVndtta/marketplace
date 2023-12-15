@@ -17,7 +17,7 @@ class User < ApplicationRecord
   
   before_save :set_default_role, if: :new_record?
   def set_default_role
-    self.role ||= :user
+    self.role ||= :seller
   end
 end
 

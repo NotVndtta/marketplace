@@ -29,8 +29,9 @@
             </div>
         </div>
     </div>
+    <% if current_user.role=="seller"  %>
      <%= link_to "Edit Product", edit_product_path, class: "product_edit" %>
-
+<% end %>
 
     
     
